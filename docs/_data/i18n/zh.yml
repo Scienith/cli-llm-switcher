@@ -86,6 +86,13 @@ home:
   grok-code-fast-1_api_title: 获取您的API密钥
   grok-code-fast-1_api_links:
     - '**平台**: [https://console.x.ai](https://console.x.ai)'
+  longcat_description: '**LongCat** 是针对 Claude Code 集成优化的快速高效 AI 模型，为编码和开发任务提供卓越性能。'
+  longcat_models_title: 可用模型
+  longcat_models:
+    - '**LongCat-Flash-Chat**: 兼具复杂推理和快速响应的高效模型'
+  longcat_api_title: 获取您的API密钥
+  longcat_api_links:
+    - '**平台**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)'
   model_config_title: 模型配置
   model_config_desc: 工具会自动为不同用途配置最佳模型：
   model_config_main: '**主模型**'
@@ -146,3 +153,4 @@ home:
     - '[DeepSeek Anthropic API 指南](https://api-docs.deepseek.com/guides/anthropic_api)'
     - '[阿里云模型服务 - Claude Code 集成](https://help.aliyun.com/zh/model-studio/claude-code)'
     - '[智谱 GLM - Claude 开发指南](https://docs.bigmodel.cn/cn/guide/develop/claude)'
+    - '[LongCat - Claude Code 配置指南](https://longcat.chat/platform/docs/ClaudeCode.html)'

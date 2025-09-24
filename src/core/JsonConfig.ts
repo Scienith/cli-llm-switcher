@@ -13,6 +13,7 @@ export interface JsonProvider {
   defaultModel?: string;
   fastModel?: string;
   models?: string[];  // Optional, no longer used
+  extraEnvVars?: Record<string, string>;  // Optional additional environment variables
 }
 
 export interface JsonConfigData {

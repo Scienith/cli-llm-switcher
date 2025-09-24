@@ -69,11 +69,20 @@ export class ProviderManager {
             // Set additional default model variables for Claude Code
             envVars.set['ANTHROPIC_DEFAULT_SONNET_MODEL'] = provider.defaultModel;
             envVars.set['ANTHROPIC_DEFAULT_HAIKU_MODEL'] = provider.defaultModel;
+
+            // Apply extra environment variables if configured
+            if (provider.extraEnvVars) {
+              for (const [key, value] of Object.entries(provider.extraEnvVars)) {
+                envVars.set[key] = value;
+              }
+            }
           }
         } else {
           envVars.unset = ['ANTHROPIC_MODEL', 'ANTHROPIC_SMALL_FAST_MODEL',
                           'ANTHROPIC_BASE_URL', 'ANTHROPIC_AUTH_TOKEN',
-                          'ANTHROPIC_DEFAULT_SONNET_MODEL', 'ANTHROPIC_DEFAULT_HAIKU_MODEL'];
+                          'ANTHROPIC_DEFAULT_SONNET_MODEL', 'ANTHROPIC_DEFAULT_HAIKU_MODEL',
+                          'ANTHROPIC_DEFAULT_OPUS_MODEL', 'CLAUDE_CODE_MAX_OUTPUT_TOKENS',
+                          'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC'];
         }
         break;
     }

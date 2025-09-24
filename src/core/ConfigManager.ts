@@ -6,7 +6,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
 import { JsonConfig, JsonConfigData, JsonProvider } from './JsonConfig';
-import { Provider, Config, LastProviderState, PROVIDER_SHORTCUTS, PROVIDER_KEYS } from './types';
+import { Provider, Config, LastProviderState, PROVIDER_SHORTCUTS, PROVIDER_KEYS, PROVIDER_CONFIGS } from './types';
 
 export class ConfigManager {
   private configDir: string;
@@ -80,10 +80,20 @@ export class ConfigManager {
           defaultModel: jsonProvider.defaultModel || '',
           fastModel: jsonProvider.fastModel || defaultFastModel
         };
-        
+
         // Only add models if they exist (for backward compatibility)
         if (jsonProvider.models && jsonProvider.models.length > 0) {
           provider.models = jsonProvider.models;
+        }
+
+        // Add extra environment variables if they exist
+        // First check if provider config has defaults, then override with user config
+        const providerConfig = PROVIDER_CONFIGS[key];
+        if (providerConfig && providerConfig.extraEnvVars) {
+          provider.extraEnvVars = { ...providerConfig.extraEnvVars };
+        }
+        if (jsonProvider.extraEnvVars) {
+          provider.extraEnvVars = { ...provider.extraEnvVars, ...jsonProvider.extraEnvVars };
         }
 
         providers.set(key, provider);
@@ -134,6 +144,9 @@ export class ConfigManager {
       if (provider.fastModel) jsonProvider.fastModel = provider.fastModel;
       if (provider.models && provider.models.length > 0) {
         jsonProvider.models = provider.models;
+      }
+      if (provider.extraEnvVars) {
+        jsonProvider.extraEnvVars = provider.extraEnvVars;
       }
       
       jsonData.providers[key] = jsonProvider;

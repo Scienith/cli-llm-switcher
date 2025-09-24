@@ -100,6 +100,13 @@ home:
   grok-code-fast-1_api_title: ' Get Your API Key'
   grok-code-fast-1_api_links:
     - ' **Platform**: [https://console.x.ai](https://console.x.ai)'
+  longcat_description: '**LongCat** はClaude Code統合に最適化された高速で効率的なAIモデルで、コーディングと開発タスクに優れたパフォーマンスを提供します。'
+  longcat_models_title: 利用可能なモデル
+  longcat_models:
+    - '**LongCat-Flash-Chat**: 複雑な推論と迅速な応答の両方に最適化された効率的なモデル'
+  longcat_api_title: APIキーを取得
+  longcat_api_links:
+    - '**プラットフォーム**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)'
   model_config_title: モデル設定
   model_config_desc: ツールは異なる用途に最適なモデルを自動的に設定します：
   model_config_main: '**メインモデル**'
@@ -157,15 +164,10 @@ home:
   references_title: 参考文献
   references_text: 'Claude Code統合のための公式プロバイダー設定ガイド:'
   references_links:
-    - >-
-      [DeepSeek Anthropic API
-      Guide](https://api-docs.deepseek.com/guides/anthropic_api)
-    - >-
-      [Alibaba Cloud Model Studio - Claude Code
-      Integration](https://help.aliyun.com/zh/model-studio/claude-code)
-    - >-
-      [Zhipu GLM - Claude Development
-      Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)
+    - '[DeepSeek Anthropic API Guide](https://api-docs.deepseek.com/guides/anthropic_api)'
+    - '[Alibaba Cloud Model Studio - Claude Code Integration](https://help.aliyun.com/zh/model-studio/claude-code)'
+    - '[Zhipu GLM - Claude Development Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)'
+    - '[LongCat - Claude Code Configuration Guide](https://longcat.chat/platform/docs/ClaudeCode.html)'
   grok_code_fast_1_description: '**xAI Grok Code Fast 1** はxAIの高速で効率的な言語モデルで、コーディングタスクと迅速な開発ワークフローに最適化されています。'
   grok_code_fast_1_models_title: 利用可能なモデル
   grok_code_fast_1_models:

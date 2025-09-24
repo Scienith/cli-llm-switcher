@@ -10,6 +10,7 @@ export interface Provider {
   defaultModel: string;
   fastModel: string;  // Required fast model
   models?: string[];  // Optional, no longer used
+  extraEnvVars?: Record<string, string>;  // Optional additional environment variables
 }
 
 export interface ProviderConfig {
@@ -22,6 +23,7 @@ export interface ProviderConfig {
   apiUrls: string[];
   apiUrlLabels?: string[];  // Labels for multiple URLs, e.g., ['China', 'International']
   logo: string;  // Logo filename for README generation
+  extraEnvVars?: Record<string, string>;  // Optional additional environment variables
 }
 
 export interface Config {
@@ -50,7 +52,8 @@ export const PROVIDER_KEYS = {
   ALIBABACLOUD: 'alibabacloud',
   ZHIPU: 'zhipu',
   KIMI: 'kimi',
-  GROK_CODE_FAST_1: 'grok-code-fast-1'
+  GROK_CODE_FAST_1: 'grok-code-fast-1',
+  LONGCAT: 'longcat'
 } as const;
 
 // Type for provider keys
@@ -66,7 +69,8 @@ export const DEFAULT_PROVIDERS = [
   PROVIDER_KEYS.ALIBABACLOUD,
   PROVIDER_KEYS.ZHIPU,
   PROVIDER_KEYS.KIMI,
-  PROVIDER_KEYS.GROK_CODE_FAST_1
+  PROVIDER_KEYS.GROK_CODE_FAST_1,
+  PROVIDER_KEYS.LONGCAT
 ];
 
 // Providers available for configuration (only these will show in config command)
@@ -76,7 +80,8 @@ export const CONFIGURABLE_PROVIDERS = [
   PROVIDER_KEYS.ALIBABACLOUD,
   PROVIDER_KEYS.KIMI,
   PROVIDER_KEYS.ZHIPU,
-  PROVIDER_KEYS.GROK_CODE_FAST_1
+  PROVIDER_KEYS.GROK_CODE_FAST_1,
+  PROVIDER_KEYS.LONGCAT
 ];
 
 export const CLI_TOOLS = ['qwen'];
@@ -143,6 +148,21 @@ export const PROVIDER_CONFIGS: Record<string, ProviderConfig> = {
     fastModel: 'grok-code-fast-1',
     apiUrls: ['https://x.ai/'],
     logo: 'xAI.png'
+  },
+  [PROVIDER_KEYS.LONGCAT]: {
+    key: PROVIDER_KEYS.LONGCAT,
+    name: 'LongCat',
+    baseUrl: 'https://api.longcat.chat/v1',
+    anthropicUrl: 'https://api.longcat.chat/anthropic',
+    defaultModel: 'LongCat-Flash-Chat',
+    fastModel: 'LongCat-Flash-Chat',
+    apiUrls: ['https://longcat.chat/platform/api_keys'],
+    logo: 'longcat.png',
+    extraEnvVars: {
+      'ANTHROPIC_DEFAULT_OPUS_MODEL': 'LongCat-Flash-Chat',
+      'CLAUDE_CODE_MAX_OUTPUT_TOKENS': '6000',
+      'CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC': '1'
+    }
   }
 };
 
