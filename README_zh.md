@@ -158,21 +158,6 @@ lms run claude
 
 ---
 
-### LongCat
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Scienith/cli-llm-switcher/main/assets/images/logo/longcat.png" alt="LongCat" width="200">
-</div>
-
-### 模型配置
-- **主模型**: `LongCat-Flash-Chat`
-- **快速模型**: `LongCat-Flash-Chat`
-
-### 获取您的API密钥
-- **平台**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)
-
----
-
 
 
 ## 卸载
@@ -220,7 +205,6 @@ rmdir /s /q "%USERPROFILE%\.llm-switch"
 - [DeepSeek Anthropic API 指南](https://api-docs.deepseek.com/guides/anthropic_api)
 - [阿里云模型服务 - Claude Code 集成](https://help.aliyun.com/zh/model-studio/claude-code)
 - [智谱 GLM - Claude 开发指南](https://docs.bigmodel.cn/cn/guide/develop/claude)
-- [LongCat - Claude Code 配置指南](https://longcat.chat/platform/docs/ClaudeCode.html)
 
 ---
 

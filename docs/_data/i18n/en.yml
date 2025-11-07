@@ -80,13 +80,6 @@ home:
   moonshot_api_links:
     - '**Platform**: [https://platform.moonshot.ai/](https://platform.moonshot.ai/)'
   grok-code-fast-1_description: '**Grok Code Fast 1** is xAI''s fast and efficient language model, optimized for coding tasks and rapid development workflows.'
-  longcat_description: '**LongCat** is a fast and efficient AI model optimized for Claude Code integration, providing excellent performance for coding and development tasks.'
-  longcat_models_title: Available Models
-  longcat_models:
-    - '**LongCat-Flash-Chat**: Fast and efficient model optimized for both complex reasoning and quick responses'
-  longcat_api_title: Get Your API Key
-  longcat_api_links:
-    - '**Platform**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)'
   grok-code-fast-1_models_title: Available Models
   grok-code-fast-1_models:
     - '**grok-code-fast-1**: Fast and efficient model optimized for coding and development tasks'
@@ -153,4 +146,3 @@ home:
     - '[DeepSeek Anthropic API Guide](https://api-docs.deepseek.com/guides/anthropic_api)'
     - '[Alibaba Cloud Model Studio - Claude Code Integration](https://help.aliyun.com/zh/model-studio/claude-code)'
     - '[Zhipu GLM - Claude Development Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)'
-    - '[LongCat - Claude Code Configuration Guide](https://longcat.chat/platform/docs/ClaudeCode.html)'

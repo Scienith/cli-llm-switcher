@@ -145,10 +145,9 @@ function generateProvidersTable(locale, L) {
       if (!config) return null;
       
       // Map provider key to i18n field prefix
-      const fieldPrefix = key === 'kimi' ? 'moonshot' :
+      const fieldPrefix = key === 'kimi' ? 'moonshot' : 
                          key === 'alibabacloud-int' ? 'alibaba_int' :
-                         key === 'alibabacloud' ? 'alibaba' :
-                         key === 'longcat' ? 'longcat' :
+                         key === 'alibabacloud' ? 'alibaba' : 
                          key;
       
       return {

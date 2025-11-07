@@ -158,21 +158,6 @@ lms run claude
 
 ---
 
-### LongCat
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Scienith/cli-llm-switcher/main/assets/images/logo/longcat.png" alt="LongCat" width="200">
-</div>
-
-### Model Configuration
-- **Main Model**: `LongCat-Flash-Chat`
-- **Fast Model**: `LongCat-Flash-Chat`
-
-### Get Your API Key
-- **Platform**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)
-
----
-
 
 
 ## Uninstallation
@@ -220,7 +205,6 @@ Official provider configuration guides for Claude Code integration:
 - [DeepSeek Anthropic API Guide](https://api-docs.deepseek.com/guides/anthropic_api)
 - [Alibaba Cloud Model Studio - Claude Code Integration](https://help.aliyun.com/zh/model-studio/claude-code)
 - [Zhipu GLM - Claude Development Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)
-- [LongCat - Claude Code Configuration Guide](https://longcat.chat/platform/docs/ClaudeCode.html)
 
 ---
 

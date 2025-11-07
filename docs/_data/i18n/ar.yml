@@ -116,13 +116,6 @@ home:
   grok-code-fast-1_api_title: ' Get Your API Key'
   grok-code-fast-1_api_links:
     - ' **Platform**: [https://console.x.ai](https://console.x.ai)'
-  longcat_description: '**LongCat** هو نموذج ذكاء اصطناعي سريع وفعال محسن لتكامل Claude Code، مما يوفر أداءً ممتازًا لمهام البرمجة والتطوير.'
-  longcat_models_title: النماذج المتاحة
-  longcat_models:
-    - '**LongCat-Flash-Chat**: نموذج فعال محسن للتفكير المعقد والاستجابات السريعة'
-  longcat_api_title: احصل على مفتاح API الخاص بك
-  longcat_api_links:
-    - '**المنصة**: [https://longcat.chat/platform/api_keys](https://longcat.chat/platform/api_keys)'
   model_config_title: تكوين النموذج
   model_config_desc: 'تقوم الأداة تلقائيًا بتكوين النماذج المثلى لأغراض مختلفة:'
   model_config_main: '**النموذج الرئيسي**'
@@ -188,10 +181,15 @@ home:
   references_title: المراجع
   references_text: 'دليل تكوين مزود رسمي لدمج Claude Code:'
   references_links:
-    - '[DeepSeek Anthropic API Guide](https://api-docs.deepseek.com/guides/anthropic_api)'
-    - '[Alibaba Cloud Model Studio - Claude Code Integration](https://help.aliyun.com/zh/model-studio/claude-code)'
-    - '[Zhipu GLM - Claude Development Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)'
-    - '[LongCat - Claude Code Configuration Guide](https://longcat.chat/platform/docs/ClaudeCode.html)'
+    - >-
+      [DeepSeek Anthropic API
+      Guide](https://api-docs.deepseek.com/guides/anthropic_api)
+    - >-
+      [Alibaba Cloud Model Studio - Claude Code
+      Integration](https://help.aliyun.com/zh/model-studio/claude-code)
+    - >-
+      [Zhipu GLM - Claude Development
+      Guide](https://docs.bigmodel.cn/cn/guide/develop/claude)
   grok_code_fast_1_description: >-
     **xAI Grok Code Fast 1** هو نموذج لغوي سريع وفعال من xAI، محسن لمهام البرمجة
     وسير عمل التطوير السريع.
